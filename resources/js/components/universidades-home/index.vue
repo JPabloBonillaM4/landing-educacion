@@ -236,7 +236,7 @@ onUnmounted(() => {
 <style scoped>
 .universidades-section {
     padding: 4rem 0;
-    background: linear-gradient(to bottom, #f9fafb, #ffffff);
+    overflow-x: hidden;
 }
 
 .container {

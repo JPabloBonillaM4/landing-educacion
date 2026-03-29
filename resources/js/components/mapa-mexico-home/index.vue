@@ -228,7 +228,7 @@ onUnmounted(() => {
 <style scoped>
 .universities-map-section {
     padding: 4rem 0;
-    background-color: #f9fafb;
+    overflow-x: hidden;
 }
 
 .container {
