@@ -187,9 +187,11 @@ export default {
         let observers = [];
 
         const scrollToForm = () => {
-            const formSection = document.getElementById('form-educativo');
+            const formSection = document.getElementById('plan-educativo');
             if (formSection) {
-                formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                const offset = 24;
+                const targetY = formSection.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({ top: targetY, behavior: 'smooth' });
             }
         };
 
