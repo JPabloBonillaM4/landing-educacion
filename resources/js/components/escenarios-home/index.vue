@@ -88,7 +88,7 @@
                                 <span>Seguro de Invalidez Extensión de pago de primas por invalidez y fallecimiento</span>
                             </li>
                         </ul>
-                        <button class="cta-button" style="background-color: var(--blue-uvm)">
+                        <button class="cta-button" style="background-color: var(--blue-uvm)" @click="scrollToForm">
                             Elegir este plan
                         </button>
                     </div>
@@ -126,7 +126,7 @@
                                 <span>Seguro de Invalidez Extensión de pago de primas por invalidez y fallecimiento</span>
                             </li>
                         </ul>
-                        <button class="cta-button" style="background-color: var(--blue-itam)">
+                        <button class="cta-button" style="background-color: var(--blue-itam)" @click="scrollToForm">
                             Elegir este plan
                         </button>
                     </div>
@@ -164,7 +164,7 @@
                                 <span>Seguro de Invalidez Extensión de pago de primas por invalidez y fallecimiento</span>
                             </li>
                         </ul>
-                        <button class="cta-button" style="background-color: var(--blue-tec)">
+                        <button class="cta-button" style="background-color: var(--blue-tec)" @click="scrollToForm">
                             Elegir este plan
                         </button>
                     </div>
@@ -185,6 +185,13 @@ export default {
         const cardsContainer = ref(null);
         const cardsVisible = ref(false);
         let observers = [];
+
+        const scrollToForm = () => {
+            const formSection = document.getElementById('form-educativo');
+            if (formSection) {
+                formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        };
 
         onMounted(() => {
             // Observer para el título
@@ -236,7 +243,8 @@ export default {
             sectionRef,
             isVisible,
             cardsContainer,
-            cardsVisible
+            cardsVisible,
+            scrollToForm
         };
     }
 }

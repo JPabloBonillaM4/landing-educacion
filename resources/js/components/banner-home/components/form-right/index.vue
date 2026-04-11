@@ -1,5 +1,5 @@
 <template>
-    <div class="form-container" :class="{ 'form-container--visible': isVisible }" ref="formRef">
+    <div id="form-educativo" class="form-container" :class="{ 'form-container--visible': isVisible }" ref="formRef">
         <div v-if="!showSuccess">
             <h2 class="form-title text-blue-primary">Comienza tu plan educativo</h2>
             <p class="form-subtitle">Déjanos tus datos para recibir una proyección personalizada.</p>

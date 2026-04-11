@@ -17,7 +17,7 @@
 
             <!-- Botón CTA -->
             <div class="animate-from-bottom delay-2" :class="{ 'animate-in': isVisible }">
-                <button class="cta-button">
+                <button class="cta-button" @click="openWhatsApp">
                     Agendar Asesoría Gratuita
                 </button>
             </div>
@@ -33,7 +33,13 @@ export default {
     setup() {
         const sectionRef = ref(null);
         const isVisible = ref(false);
+        const phoneNumber = '5558870510';
+        const whatsappUrl = `https://wa.me/52${phoneNumber}?text=Hola,%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n`;
         let observer = null;
+
+        const openWhatsApp = () => {
+            window.open(whatsappUrl, '_blank');
+        };
 
         onMounted(() => {
             observer = new IntersectionObserver(
@@ -63,7 +69,8 @@ export default {
 
         return {
             sectionRef,
-            isVisible
+            isVisible,
+            openWhatsApp
         };
     }
 }
