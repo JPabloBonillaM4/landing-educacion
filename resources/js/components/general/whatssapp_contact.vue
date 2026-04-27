@@ -1,6 +1,10 @@
 <script setup>
 const phoneNumber = '5558870510';
-const whatsappUrl = `https://wa.me/52${phoneNumber}?text=Hola,%20me%20gustaría%20obtener%20más%20información`;
+const message = `Hola 👋, gracias por tu interés en el seguro educativo para tu hijo(a).
+Con gusto le vamos a ayudar a construir su proyecto de educación 🎓
+
+¿Nos comparte su nombre, por favor?`;
+const whatsappUrl = `https://wa.me/52${phoneNumber}?text=${encodeURIComponent(message)}`;
 
 const openWhatsApp = () => {
     window.open(whatsappUrl, '_blank');
