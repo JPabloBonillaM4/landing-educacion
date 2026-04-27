@@ -1,5 +1,5 @@
 <template>
-    <section ref="sectionRef" class="py-16 px-4 bg-white">
+    <section ref="sectionRef" class="py-16 px-4 bg-white overflow-x-hidden">
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <!-- Lado Izquierdo: Texto y Estadísticas -->

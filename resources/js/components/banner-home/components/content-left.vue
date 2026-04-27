@@ -142,7 +142,8 @@ onUnmounted(() => {
 
 @media (max-width: 480px) {
     .main-title {
-        font-size: 3.75rem;
+        font-size: 2.25rem;
+        line-height: 1.15;
     }
 
     .main-title br {
@@ -150,7 +151,7 @@ onUnmounted(() => {
     }
 
     .subtitle {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 </style>
