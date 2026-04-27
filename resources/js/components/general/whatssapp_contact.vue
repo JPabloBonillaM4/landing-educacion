@@ -1,7 +1,7 @@
 <script setup>
 const phoneNumber = '5558870510';
-const message = `Hola 👋, gracias por tu interés en el seguro educativo para tu hijo(a).
-Con gusto le vamos a ayudar a construir su proyecto de educación 🎓
+const message = `Hola \u{1F44B}, gracias por tu interés en el seguro educativo para tu hijo(a).
+Con gusto le vamos a ayudar a construir su proyecto de educación \u{1F393}
 
 ¿Nos comparte su nombre, por favor?`;
 const whatsappUrl = `https://wa.me/52${phoneNumber}?text=${encodeURIComponent(message)}`;
