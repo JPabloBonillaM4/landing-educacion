@@ -1,5 +1,5 @@
 <script setup>
-const phoneNumber = '5558870510';
+const phoneNumber = '5523452633';
 const message = `Hola \u{1F44B}, me gustaría cotizar un seguro educativo para mi hijo(a) y recibir más información sobre los planes disponibles. \u{1F393}
 
 ¿Me pueden orientar?`;
